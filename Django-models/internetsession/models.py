@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext as _
 
-# Create your models here.
+# create objects of each column of csv file for Django
 class internet_seesion(models.Model):
     name = models.CharField(_("name"),max_length=255)
     start_time = models.CharField(_("start time"),max_length=255)

@@ -19,7 +19,7 @@ from internetsession import views
 
 # adding internetsession urls to urlpattern
 urlpatterns = [
-    path('test/', include('internetsession.urls')),
+    path('showtable/', include('internetsession.urls')),
     path('admin/', admin.site.urls),
 
 ]

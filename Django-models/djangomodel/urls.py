@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from internetsession import views
+from internetsession import urls
 
 # adding internetsession urls to urlpattern
+# adding rest_framework path to urlpattern
 urlpatterns = [
     path('showtable/', include('internetsession.urls')),
+    path('api-auth/', include('rest_framework.urls')),
     path('admin/', admin.site.urls),
 
 ]

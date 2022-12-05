@@ -21,7 +21,8 @@ from internetsession import urls
 # adding rest_framework path to urlpattern
 urlpatterns = [
     path('showtable/', include('internetsession.urls')),
-    path('api-auth/', include('rest_framework.urls')),
+    # path('api-auth/', include('rest_framework.urls')),
     path('admin/', admin.site.urls),
+    path('records/', include(urls)),
 
 ]

@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import internet_seesion
 
-# Register your models here.
+admin.site.register(internet_seesion)

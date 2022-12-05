@@ -7,4 +7,4 @@ class modelSerializer(serializers.ModelSerializer):
     class Meta:
         model = IS
         # fields of the model
-        fields = ["name" , "start_time" , "usage_time" , "ip" , "MAC" , "upload" , "download" , "total_transfers", "session_break_reason"]
+        fields = ["id","name" , "start_time" , "usage_time" , "ip" , "MAC" , "upload" , "download" , "total_transfers", "session_break_reason"]
